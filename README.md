@@ -16,7 +16,7 @@
   * There should already be a file named Code.gs in your project.  Replace the contents of that file with the contents of the code.gs file found in this directory.  
   * For all remaining html files, be sure to select **File > New > Html** when creating the file.  Enter the associated file name but omit the .html suffix. The suffix will be automatically added when the file is created.
 1. Close the script editor and reload the form.  
-1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub) for more information.
+1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
 
 
 ### Method #2:  TSScriptCopy Application Install
@@ -27,10 +27,10 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 1. Access the [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec). *(If you have not run TSScriptCopy before, you will be prompted to perform a one-time authorization to allow the application to copy scripts and host documents to your Google Drive.)*
 1. On the resulting web page, click the **Copy to Drive** button associated with TSContactForm to install.
 1. Locate and open the **TSContact host form** which was copied to your Google Drive.
-1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub) for more information.
+1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
 
 
-*NOTE: TSScriptCopy application use is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
+*NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
 
 
 
