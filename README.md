@@ -7,19 +7,7 @@
 ## Install
 
 
-### Method #1:  Manual Install
-
-1. Login to your [Google Drive](http://drive.google.com).
-1. Create a [Google Form](https://support.google.com/docs/topic/6063584).
-1. Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet).
-1. Add **code.gs**, **email.html** and **about.html** to the form project. 
-  * There should already be a file named Code.gs in your project.  Replace the contents of that file with the contents of the code.gs file found in this directory.  
-  * For all remaining html files, be sure to select **File > New > Html** when creating the file.  Enter the associated file name but omit the .html suffix. The suffix will be automatically added when the file is created.
-1. Close the script editor and reload the form.  
-1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
-
-
-### Method #2:  TSScriptCopy Application Install
+### Method #1:  TSScriptCopy Application Install
 
 Use the **TSScriptCopy application** to install the **TSContactForm script and host form** into your Google Drive.  
 
@@ -31,6 +19,22 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
+
+
+
+### Method #2:  Manual Install
+
+1. Login to your [Google Drive](http://drive.google.com).
+1. Create a [Google Form](https://support.google.com/docs/topic/6063584).
+1. Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet).
+1. Add **code.gs**, **email.html** and **about.html** to the form project. 
+  * There should already be a file named Code.gs in your project.  Replace the contents of that file with the contents of the code.gs file found in this directory.  
+  * For all remaining html files, be sure to select **File > New > Html** when creating the file.  Enter the associated file name but omit the .html suffix. The suffix will be automatically added when the file is created.
+1. Close the script editor and reload the form.  
+1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
+
+
+
 
 
 
