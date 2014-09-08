@@ -4,8 +4,6 @@
 
 Emails are nicely formatted and contain the contents of the form submission.
 
----
-
 
 ## Install
 
@@ -35,16 +33,9 @@ The **TSScriptCopy application** will install the *TSContactForm script and host
 *NOTE: TSScriptCopy application use is licensed under [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)*
 
 
-
----
-
-
 ## Usage
 
 See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub)
-
-
----
 
 
 ## Important Notes
@@ -54,15 +45,11 @@ See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgx
 * TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
 
 
----
-
 ## Release Notes
 
 **v0.1.0 2014-09-08** 
 
 * Initial Release
-
----
 
 
 ## License
