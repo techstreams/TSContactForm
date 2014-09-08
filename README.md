@@ -42,9 +42,7 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub)
 
-
-
-## Important Notes
+**Important Usage Notes**
 
 * Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/a/macros/mytechstreams.com/dashboard) for more information.
 
