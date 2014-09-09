@@ -16,8 +16,7 @@
 */
 
 /**
- * Adds a custom menu to the active form, containing a single menu item for
- * invoking checkResponses() specified below.
+ * Add a custom menu to the active form
  */
 function onOpen() {
   FormApp.getUi()
