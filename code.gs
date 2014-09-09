@@ -31,8 +31,7 @@ function onOpen() {
 
 
 /**
- * Gets the list of responses and checks the average rating from the form
- * created in createForm() above.
+ * Process form response
  * @param {object} form submit trigger event
  */
 function checkResponses(e) {
