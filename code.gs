@@ -131,7 +131,6 @@ function getPrettyDuration(time) {
     * @param {object} form object
     * @param {object} form response object
     * @param {string} email template name
-    * @param {string} email border template name
     * @param {string} email subject line
     */
 
@@ -180,21 +179,6 @@ function getPrettyDuration(time) {
         return ScriptApp.deleteTrigger(trigger);
       });
       ScriptApp.newTrigger(functionName).forForm(this.form).onFormSubmit().create();
-      return this;
-    };
-
-    /*
-    * Remove all form elements
-    */
-
-
-    TSContactForm.prototype.clearForm_ = function() {
-      var children,
-        _this = this;
-      children = this.form.getItems();
-      children.forEach(function(item) {
-        return _this.form.deleteItem(item);
-      });
       return this;
     };
 
