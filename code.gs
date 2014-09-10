@@ -66,7 +66,7 @@ function enableSubmitTrigger() {
  * Show About Information
  */
 function about() {
-  FormApp.getUi().showModelessDialog(HtmlService.createHtmlOutputFromFile('about'), '');
+  FormApp.getUi().showModelessDialog(HtmlService.createHtmlOutputFromFile('about'), ' ');
 }
 
 
