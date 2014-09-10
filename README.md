@@ -28,9 +28,9 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 1. Create a [Google Form](https://support.google.com/docs/topic/6063584).
 1. Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet).
 1. Add **code.gs**, **email.html** and **about.html** to the form project. 
-  * There should already be a file named Code.gs in your project.  Replace the contents of that file with the contents of the code.gs file found in this directory.  
-  * For all remaining html files, be sure to select **File > New > Html** when creating the file.  Enter the associated file name but omit the .html suffix. The suffix will be automatically added when the file is created.
-1. Close the script editor and reload the form.  
+  * There should already be a file named **Code.gs** in your project.  Replace the contents of that file with the contents of the **code.gs** file found in this directory.  
+  * When creating files for **email.html** and **about.html**, be sure to select the **File > New > Html** menu option.  Enter the associated file name (e.g. `email` or `about`) but omit the .html suffix as it will automatically be added when the file is created.  Replace the created file content with the associated file content for the respective html file and save.
+1. Close the script editor and reload the form in your browser.  
 1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
 
 
