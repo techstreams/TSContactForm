@@ -1,3 +1,4 @@
+
 /*
 * Copyright 2014 Laura Taylor
 * (https://github.com/techstreams/TSContactForm)
@@ -13,9 +14,9 @@
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 * See the License for the specific language governing permissions and
 * limitations under the License.
-*/
+ */
 
-/**
+/*
  * Add a custom menu to the active form
  */
 function onOpen() {
@@ -26,10 +27,9 @@ function onOpen() {
       .addSeparator()
       .addItem('About', 'about')
       .addToUi();
-}
+};
 
-
-/**
+/*
  * Process form response
  * @param {object} form submit trigger event
  */
@@ -42,37 +42,36 @@ function checkResponses(e) {
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSContactForm: Error processing form submission', error.message);
   }
-}
+};
 
-/**
+/*
  * Clear all form responses
  */
 function clearResponses() {
   var tscf;
   tscf = new TSContactForm(FormApp.getActiveForm()).clearFormResponses();
   FormApp.getUi().alert('All Form Responses Deleted.');
-}
+};
 
-/**
+/*
  * Setup form submit trigger
  */
 function enableSubmitTrigger() {
   var tscf;
   tscf = new TSContactForm(FormApp.getActiveForm()).setFormTrigger('checkResponses');
   FormApp.getUi().alert('Form Submit Trigger has been Enabled.');
-}
+};
 
-/**
+/*
  * Show About Information
  */
 function about() {
   FormApp.getUi().showModelessDialog(HtmlService.createHtmlOutputFromFile('about'), ' ');
-}
+};
 
-
-/**
+/*
  * Get time in pretty format
-* @param {string} time string in format hh:mm
+ * @param {string} time string in format hh:mm
  */
 function getPrettyTime(time) {
   var t;
@@ -86,10 +85,9 @@ function getPrettyTime(time) {
   } else {
     return (t[0] - 12) + ":" + t[1] + 'PM';
   }
-}
+};
 
-
-/**
+/*
  * Get duration in pretty format
  * @param {string} duration string in format hh:mm:ss
  */
@@ -113,25 +111,26 @@ function getPrettyDuration(time) {
     duration += parseInt(t[2]) + " seconds";
   }
   return duration;
-}
-
+};
 
 /*
-* TSContactForm
-* @class
-*/
-
-
+* Define TSContactForm Class
+ */
 (function() {
-  this.TSContactForm = (function() {
+
+  /*
+  * TSContactForm
+  * @class
+   */
+  return this.TSContactForm = (function() {
+
     /*
     * @constructor
     * @param {object} form object
     * @param {object} form response object
     * @param {string} email template name
     * @param {string} email subject line
-    */
-
+     */
     function TSContactForm(form, formResponse, email, subjectline) {
       this.form = form;
       this.formResponse = formResponse != null ? formResponse : null;
@@ -141,20 +140,20 @@ function getPrettyDuration(time) {
       this;
     }
 
+
     /*
     * Delete all form responses
-    */
-
+     */
 
     TSContactForm.prototype.clearFormResponses = function() {
       this.deleteFormResponses_();
       return this;
     };
 
+
     /*
     * Generate form meta and send email
-    */
-
+     */
 
     TSContactForm.prototype.sendEmail = function() {
       this.generateFormResponseMeta_();
@@ -164,11 +163,11 @@ function getPrettyDuration(time) {
       return this;
     };
 
+
     /*
     * Set a form trigger for processing form responses
     * @param {string} function name to be run on trigger
-    */
-
+     */
 
     TSContactForm.prototype.setFormTrigger = function(functionName) {
       var triggers;
@@ -180,24 +179,23 @@ function getPrettyDuration(time) {
       return this;
     };
 
+
     /*
     * Delete all form responses
-    */
-
+     */
 
     TSContactForm.prototype.deleteFormResponses_ = function() {
       this.form.deleteAllResponses();
       return this;
     };
 
+
     /*
     * Generate form response meta
-    */
-
+     */
 
     TSContactForm.prototype.generateFormResponseMeta_ = function() {
-      var meta,
-        _this = this;
+      var meta;
       if (this.formResponse) {
         meta = new Object();
         meta.url = this.form.getPublishedUrl();
@@ -206,38 +204,40 @@ function getPrettyDuration(time) {
           meta.submitter = this.formResponse.getRespondentEmail();
         }
         meta.response = [];
-        this.formResponse.getItemResponses().forEach(function(itemResponse) {
-          var item, response, scale, scaleparams;
-          item = itemResponse.getItem();
-          response = new Object();
-          response.title = item.getTitle();
-          response.type = _this.getItemType_(item.getType());
-          if (response.type === 'grid') {
-            response.rows = item.asGridItem().getRows();
-          }
-          if (response.type === 'scale') {
-            scale = item.asScaleItem();
-            scaleparams = new Object();
-            scaleparams.lowerlabel = scale.getLeftLabel();
-            scaleparams.lowerbound = scale.getLowerBound();
-            scaleparams.upperlabel = scale.getRightLabel();
-            scaleparams.upperbound = scale.getUpperBound();
-            response.scale = scaleparams;
-          }
-          response.response = itemResponse.getResponse();
-          meta.response.push(response);
-          return null;
-        });
+        this.formResponse.getItemResponses().forEach((function(_this) {
+          return function(itemResponse) {
+            var item, response, scale, scaleparams;
+            item = itemResponse.getItem();
+            response = new Object();
+            response.title = item.getTitle();
+            response.type = _this.getItemType_(item.getType());
+            if (response.type === 'grid') {
+              response.rows = item.asGridItem().getRows();
+            }
+            if (response.type === 'scale') {
+              scale = item.asScaleItem();
+              scaleparams = new Object();
+              scaleparams.lowerlabel = scale.getLeftLabel();
+              scaleparams.lowerbound = scale.getLowerBound();
+              scaleparams.upperlabel = scale.getRightLabel();
+              scaleparams.upperbound = scale.getUpperBound();
+              response.scale = scaleparams;
+            }
+            response.response = itemResponse.getResponse();
+            meta.response.push(response);
+            return null;
+          };
+        })(this));
         this.meta = meta;
       }
       return this;
     };
 
+
     /*
     * Get form response item type
     * @param {object} form response item type
-    */
-
+     */
 
     TSContactForm.prototype.getItemType_ = function(itemType) {
       var type;
@@ -283,10 +283,10 @@ function getPrettyDuration(time) {
       return type;
     };
 
+
     /*
     * Send email
-    */
-
+     */
 
     TSContactForm.prototype.sendEmail_ = function() {
       var email, params;
@@ -302,5 +302,4 @@ function getPrettyDuration(time) {
     return TSContactForm;
 
   })();
-
-}).call(this);
+})();

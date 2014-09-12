@@ -1,0 +1,16 @@
+{
+  "name": "TSContactForm",
+  "version": "0.1.0",
+  "description": "A Google Apps Script for Google Forms which sends an email response to the form owner upon each form submission.",
+  "author": "Laura Taylor",
+  "license": "Apache License, Version 2.0",
+  "homepage": "https://github.com/techstreams/tscontactform",
+  "private": true,
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp-util": "^3.0.1",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.2.0",
+    "gulp-rename": "^1.2.0"
+  }
+}
