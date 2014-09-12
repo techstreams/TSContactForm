@@ -11,11 +11,15 @@
 
 Use the **TSScriptCopy application** to install the **TSContactForm script and host form** into your Google Drive.  
 
-1. Login to your [Google Drive](http://drive.google.com).
-1. Access the [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec). *(If you have not run TSScriptCopy before, you will be prompted to perform a one-time authorization to allow the application to copy scripts and host documents to your Google Drive.)*
-1. On the resulting web page, click the **Copy to Drive** button associated with TSContactForm to install.
-1. Locate and open the **TSContact host form** which was copied to your Google Drive.
-1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
+* Login to your [Google Drive](http://drive.google.com)
+
+* Access the [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec). *(If you have not run TSScriptCopy before, you will be prompted to perform a one-time authorization to allow the application to copy scripts and host documents to your Google Drive.)*
+
+* On the resulting web page, click the **Copy to Drive** button associated with TSContactForm to install
+
+* Locate and open the **TSContact host form** which was copied to your Google Drive
+
+* To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
@@ -24,16 +28,27 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 ### Method #2:  Manual Install
 
-1. Login to your [Google Drive](http://drive.google.com).
-1. Create a [Google Form](https://support.google.com/docs/topic/6063584).
-1. Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet).
-1. Add **code.gs**, **email.html** and **about.html** to the form project. 
-  * There should already be a file named **Code.gs** in your project.  Replace the contents of that file with the contents of the **code.gs** file found in this directory.  
-  * When creating files for **email.html** and **about.html**, be sure to select the **File > New > Html** menu option.  Enter the associated file name (e.g. `email` or `about`) but omit the .html suffix as it will automatically be added when the file is created.  Replace the created file content with the associated file content for the respective html file and save.
-1. Close the script editor and reload the form in your browser.  
-1. To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
+* Login to your [Google Drive](http://drive.google.com)
 
+* Create a [Google Form](https://support.google.com/docs/topic/6063584)
 
+* Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet)
+
+* Add the following files from the **dist/** directory to the form project:
+
+  * **code.gs**
+  * **email.html**
+  * **about.html**
+
+  NOTES:
+
+  There should already be a file named **Code.gs** in your form project when you first create it.  Replace the contents of that file with the contents of the **dist/code.gs** file and save.
+
+  When creating form project files for **email.html** and **about.html**, be sure to select the **File > New > Html** menu option from the script editor.  Enter the associated file name (**email** or **about**) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the associated file content for the respective html file (**dist/email.html** or **dist/about.html**) and save.
+
+* Close the script editor and reload the form in your browser
+
+* To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub)
 
 
 
