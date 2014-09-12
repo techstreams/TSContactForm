@@ -63,8 +63,7 @@ Follow the [Github Pull Request Documentation](https://help.github.com/articles/
 
 #### Chosen Code Conventions
 
-1. Make all changes for **dist/code.gs** in **src/tscontactform.coffee**.
-2. See the section [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) below for information on using [Gulp](http://gulpjs.com/) to make the **dist/code.gs** file.
+1. Make all changes for **dist/code.gs** in **src/tscontactform.coffee** and use [Gulp](http://gulpjs.com/) to build.  See the section [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) below for more information.
 3. Make all changes to `.html` files in the **dist/** directory
 
 
