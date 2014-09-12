@@ -173,7 +173,7 @@ do ->
         .create()
       @
 
-    # PUBLIC FUNCTIONS
+    # PRIVATE FUNCTIONS
 
     ###
     * Delete all form responses
