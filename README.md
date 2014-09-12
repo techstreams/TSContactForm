@@ -36,15 +36,15 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 * Add the following files from the **dist/** directory to the form project:
 
-  * **code.gs**
-  * **email.html**
-  * **about.html**
+  * **[code.gs](dist/code.gs)**
+  * **[email.html](dist/email.html)**
+  * **[about.html](dist/about.html)**
 
   NOTES:
 
   There should already be a file named **Code.gs** in your form project when you first create it.  Replace the contents of that file with the contents of the **dist/code.gs** file and save.
 
-  When creating form project files for **email.html** and **about.html**, be sure to select the **File > New > Html** menu option from the script editor.  Enter the associated file name (**email** or **about**) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the associated file content for the respective html file (**dist/email.html** or **dist/about.html**) and save.
+  When creating form project files for **[email.html](dist/email.html)** and **[about.html](dist/about.html)**, be sure to select the **File > New > Html** menu option from the script editor.  Enter the associated file name ( **email** or **about** ) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the associated file content for the respective html file ( **[email.html](dist/email.html)** or **[about.html](dist/about.html)** ) and save.
 
 * Close the script editor and reload the form in your browser
 
