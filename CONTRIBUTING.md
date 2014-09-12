@@ -2,12 +2,12 @@
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
 
-_**Note:** These guidelines are adapted from [issue-guidelines](https://github.com/necolas/issue-guidelines) by [@necolas](https://github.com/necolas)_
+_**Note:** These guidelines are adapted from [issue-guidelines](https://github.com/necolas/issue-guidelines)._
 
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/techstreams/tscontactform/issues) is the preferred channel for [bug reports](#bug-reports),[features requests](#feature-requests) and [submitting pull requests](#pull-requests).
+The [issue tracker](https://github.com/techstreams/tscontactform/issues) is the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests) and [submitting pull requests](#pull-requests).
 
 
 ## Bug reports
@@ -22,8 +22,7 @@ Guidelines for bug reports:
 
 3. **Include Pertinent Details** &mdash; include any details which will aid in solving the problem.  This includes such items as steps to reproduce the bug, screenshots showing the issue and browser/OS version.  Ideally include lines of code that you have identified as causing the bug.
 
-A good bug report shouldn't leave others needing to contact you for more information. Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem?  What outcome did you expect and how did it differ from
-what you actually saw? All these details will the project owner fix any potential bugs.
+Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem?  What outcome did you expect and how did it differ from what you actually saw? All these details will help the project owner fix any potential bugs.
 
 Example:
 
@@ -55,9 +54,9 @@ Good pull requests - patches, improvements, new features - are a fantastic help.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project owner might not want to merge into the project.
 
-Please adhere to the coding conventions used throughout a project (indentation, accurate comments, etc.) and test your code.
+Please adhere to the coding conventions used throughout the project (indentation, accurate comments, etc.) and test your code.
 
-Follow the [Github Pull Request Documentation](http://help.github.com/fork-a-repo/) to create a pull request.
+Follow the [Github Pull Request Documentation](https://help.github.com/articles/using-pull-requests) to create a pull request.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to license your work under the [Apache License, Version 2.0](LICENSE) used by the project.
 
@@ -65,7 +64,7 @@ Follow the [Github Pull Request Documentation](http://help.github.com/fork-a-rep
 #### Chosen Code Conventions
 
 1. Make all changes for **dist/code.gs** in **src/tscontactform.coffee**.
-2. Use [Gulp](#using-coffeescript-and-gulp) to build the **dist/code.gs** file.
+2. See the section [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) below for information on using [Gulp](http://gulpjs.com/) to make the **dist/code.gs** file.
 3. Make all changes to `.html` files in the **dist/** directory
 
 
@@ -77,7 +76,7 @@ To install development dependencies, run the following command in the project's 
 
     npm install
 
-To build, run the following command in the project's root directory:
+Run the following command in the project's root directory:
 
     gulp
 
