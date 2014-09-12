@@ -64,6 +64,15 @@ See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgx
 * TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
 
 
+## Contributing to this project
+
+Contributions are welcome. Please take a moment to review the [guidelines for contributing](CONTRIBUTING.md).
+
+* [Bug reports](CONTRIBUTING.md#bug-reports)
+* [Feature requests](CONTRIBUTING.md#feature-requests)
+* [Pull requests](CONTRIBUTING.md#pull-requests)
+
+
 
 ## License
 
