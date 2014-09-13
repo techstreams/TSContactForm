@@ -22,7 +22,7 @@ gulp.task 'build', ->
   .pipe(gulp.dest(destination.gs))
 
 gulp.task 'watch', ->
-  gulp.watch source.coffee, ['build']
+  gulp.watch source.coffee, ['lint', 'build']
 
 gulp.task 'dev', ['lint', 'build', 'watch']
 
