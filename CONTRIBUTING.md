@@ -75,8 +75,12 @@ To install development dependencies, run the following command in the project's 
 
     npm install
 
-Run the following command in the project's root directory:
+To build, run the following command in the project's root directory:
 
     gulp
 
-You can find the task in [gulpfile.coffee](gulpfile.coffee).
+*While developing, the `gulp dev` task may be useful.  Run the following command in the project's root directory:*
+
+    gulp dev
+
+You can find the gulp tasks in [gulpfile.coffee](gulpfile.coffee).
