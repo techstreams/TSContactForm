@@ -1,10 +1,29 @@
 gulp = require 'gulp'
 gutil = require 'gulp-util'
 coffee = require 'gulp-coffee'
+coffeelint = require 'gulp-coffeelint'
 rename = require 'gulp-rename'
 
-gulp.task 'default', ->
-  gulp.src('src/tscontactform.coffee')
+source =
+  coffee: 'src/tscontactform.coffee'
+
+destination =
+  gs: 'dist'
+
+gulp.task 'lint', ->
+  gulp.src(source.coffee)
+  .pipe(coffeelint())
+  .pipe(coffeelint.reporter())
+
+gulp.task 'build', ->
+  gulp.src(source.coffee)
   .pipe(coffee({bare: true}).on('error', gutil.log))
   .pipe(rename("code.gs"))
-  .pipe(gulp.dest('dist'))
+  .pipe(gulp.dest(destination.gs))
+
+gulp.task 'watch', ->
+  gulp.watch source.coffee, ['build']
+
+gulp.task 'dev', ['lint', 'build', 'watch']
+
+gulp.task 'default', ['build']
