@@ -61,13 +61,13 @@ Follow the [Github Pull Request Documentation](https://help.github.com/articles/
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to license your work under the [Apache License, Version 2.0](LICENSE) used by the project.
 
 
-#### Code Conventions
+## Code Conventions
 
 1. Make all changes for [dist/code.gs](dist.code.gs) in [src/tscontactform.coffee](src/tscontactform.coffee) and use [Gulp](http://gulpjs.com/) to build.  See the section [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) below for more information.
 3. Make all changes to `.html` files in the **dist/** directory
 
 
-#### Using CoffeeScript and Gulp
+## Using CoffeeScript and Gulp
 
 Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
 
