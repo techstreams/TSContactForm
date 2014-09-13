@@ -2,7 +2,7 @@
 * Copyright 2014 Laura Taylor
 * (https://github.com/techstreams/TSContactForm)
 *
-* Licensed under the Apache License, Version 2.0 (the "License"); 
+* Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
 * You may obtain a copy of the License at
 *
@@ -37,7 +37,7 @@
   var form, tscf;
   try {
     form = FormApp.getActiveForm();
-    tscf = new TSContactForm(form, e.response).sendEmail(); 
+    tscf = new TSContactForm(form, e.response).sendEmail();
   } catch(error) {
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSContactForm: Error processing form submission', error.message);
@@ -257,7 +257,7 @@ do ->
       params =
         htmlBody: email.evaluate().getContent()
       # Send email
-      MailApp.sendEmail(Session.getEffectiveUser().getEmail(), @subjectline, "", params);
+      MailApp.sendEmail(Session.getEffectiveUser().getEmail(), @subjectline, "", params)
       null
 
 
