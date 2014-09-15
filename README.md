@@ -59,7 +59,7 @@ See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgx
 
 **Important Usage Notes**
 
-* Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/a/macros/mytechstreams.com/dashboard) for more information.
+* Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/macros/dashboard) for more information.
 
 * TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
 
