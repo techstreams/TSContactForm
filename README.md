@@ -108,6 +108,8 @@ To run the docs locally, [install Harp](#docs) and run the following command fro
 
     gulp docsdev
 
+*Open up a browser and navigate to http://localhost:9000*
+
 To compile the docs, [install Harp](#docs) and run the following command from the project's root directory:
 
     gulp docsbuild
@@ -125,7 +127,7 @@ To run the Harp server, execute the following command from the project's root di
 
     harp server ./docs/_harp
 
-* Open up a browser and navigate to http://localhost:9000*
+*Open up a browser and navigate to http://localhost:9000*
 
 To build the docs, execute the following command from the project's root directory *(or use the [gulp docsbuild](#using-coffeeScript-and-gulp) task)*:
 
