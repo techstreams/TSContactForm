@@ -79,6 +79,37 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 
 
+## Developer Notes
+
+### Code
+
+* Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [dist/code.gs](dist/code.gs) and use [Gulp](http://gulpjs.com/) to build.  See the [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) section below for more information.
+
+* Edit `.html` files directly in the [dist directory](./dist)
+
+
+### Using CoffeeScript and Gulp
+
+Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
+
+To install dependencies, run the following command in the project's root directory:
+
+    npm install
+
+*You may need to run `sudo npm install` depending upon your environment.*
+
+To build, edit the [source](src/tscontactform.coffee) and run the following command in the project's root directory:
+
+    gulp
+
+*While developing, the `gulp dev` task may be useful.  Run the following command in the project's root directory:*
+
+    gulp dev
+
+You can find all gulp tasks in [gulpfile.coffee](gulpfile.coffee).
+
+
+
 ## License
 
 Copyright 2014 [Laura Taylor](https://github.com/techstreams)

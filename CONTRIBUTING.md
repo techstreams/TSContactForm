@@ -54,33 +54,9 @@ Good pull requests - patches, improvements, new features - are a fantastic help.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project owner might not want to merge into the project.
 
-Please adhere to the coding conventions used throughout the project (indentation, accurate comments, etc.) and test your code.
+Please adhere to the coding conventions used throughout the project (indentation, accurate comments, etc.) and test your code.  See the [Developer Notes](README.md#developer-notes) for more information.
 
 Follow the [Github Pull Request Documentation](https://help.github.com/articles/using-pull-requests) to create a pull request.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project owner to license your work under the [Apache License, Version 2.0](LICENSE) used by the project.
 
-
-## Code Conventions
-
-1. Make all changes for [dist/code.gs](dist.code.gs) in [src/tscontactform.coffee](src/tscontactform.coffee) and use [Gulp](http://gulpjs.com/) to build.  See the section [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) below for more information.
-3. Make all changes to `.html` files in the **dist/** directory
-
-
-## Using CoffeeScript and Gulp
-
-Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
-
-To install development dependencies, run the following command in the project's root directory:
-
-    npm install
-
-To build, run the following command in the project's root directory:
-
-    gulp
-
-*While developing, the `gulp dev` task may be useful.  Run the following command in the project's root directory:*
-
-    gulp dev
-
-You can find the gulp tasks in [gulpfile.coffee](gulpfile.coffee).
