@@ -121,7 +121,7 @@ You can find all gulp tasks in [gulpfile](gulpfile.coffee).
 
 The documentation was built with [Harp](http://harpjs.com/).  To run the documentation locally:
 
-Install Harp globally.  *See the [documentation](http://harpjs.com/docs/environment/install) for more information.*
+Install Harp on your system.  *See the [documentation](http://harpjs.com/docs/environment/install) for more information.*
 
 To run the Harp server, execute the following command from the project's root directory *(or use the [gulp docsdev](#using-coffeeScript-and-gulp) task)*:
 
