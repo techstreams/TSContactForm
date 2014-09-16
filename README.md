@@ -106,7 +106,7 @@ To build, edit the [source](src/tscontactform.coffee) and run the following comm
 
     gulp dev
 
-You can find all gulp tasks in [gulpfile.coffee](gulpfile.coffee).
+You can find all gulp tasks in [gulpfile](gulpfile.coffee).
 
 
 
