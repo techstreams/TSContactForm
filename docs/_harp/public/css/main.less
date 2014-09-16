@@ -1,0 +1,139 @@
+@sitecolor: #dff0d8;
+@nlfocuscolor: #468847;
+@h4margin: 25px;
+@footercss: false;
+@rendermd: false;
+@notice: true;
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.jumbotron {
+  background-color: @sitecolor;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  font-weight: bold;
+  color: @nlfocuscolor;
+}
+div.panel-body {
+  word-wrap: break-word;
+}
+
+div.panel-body h1 {
+  margin-bottom: 30px;
+}
+
+div.panel-body img {
+  display:block;
+  margin:auto;
+}
+div.mdrender when (@rendermd = true)  {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+img {
+  border:3px solid;
+  border-radius:25px;
+  border-color: gray;
+}
+p.red {
+  color: red;
+}
+pre.source {
+display: block;
+padding: 9.5px;
+margin: 0 0 10px;
+font-size: 14px;
+line-height: 1.428571429;
+color: #F30505;
+word-break: break-all;
+word-wrap: break-word;
+background-color: #f5f5f5;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.footer when (@footercss = true) {
+  margin-top: 60px;
+  height: 50px;
+  padding-top: 8px;
+  padding-left: 80px;
+  padding-right: 80px;
+  vertical-align: middle;
+  background-color: @sitecolor;
+}
+.footer > p when (@footercss = true) {
+  vertical-align: middle;
+}
+.panel {
+  border: 1px solid #ddd;
+}
+
+.panel > .panel-heading {
+  background-color: @sitecolor;
+}
+.separator {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.ts-notice when (@notice = true) {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+.ts-notice-default when (@notice = true) {
+  background-color: #F0F0F0;
+  border-color: #999;
+}  
+.ts-notice-default h4 when (@notice = true) {
+  margin-bottom: @h4margin;
+
+}
+.ts-notice-primary when (@notice = true) {
+  background-color: #C0DEF8;
+  border-color: #428bca;
+}
+.ts-notice-primary h4 when (@notice = true) {
+  color: #428bca;
+  margin-bottom: @h4margin;
+}
+.ts-notice-success when (@notice = true) {
+  background-color: #EFFAEA;
+  border-color: #739964;  
+}
+.ts-notice-success h4 when (@notice = true) {
+  color: #739964;  
+  margin-bottom: @h4margin;
+}
+.ts-notice-warning when (@notice = true) {
+  background-color: #fcf8f2;  
+  border-color: #f0ad4e;
+}
+.ts-notice-warning h4 when (@notice = true) {
+  color: #f0ad4e;
+  margin-bottom: @h4margin;
+}
+.ts-notice-danger when (@notice = true) {
+  background-color: #fdf7f7;
+  border-color: #d9534f;
+}
+.ts-notice-danger h4 when (@notice = true) {
+  color: #d9534f;
+  margin-bottom: @h4margin;
+}
+.ts-notice-info when (@notice = true) {
+  background-color: #f4f8fa;
+  border-color: #5bc0de;
+}
+.ts-notice-info h4 when (@notice = true) {
+  color: #5bc0de;
+  margin-bottom: @h4margin;
+}

@@ -1,0 +1,26 @@
+{
+  "globals": {
+  	"site": {
+    	"title": "TSContactForm",    
+    	"description": "A Google Apps Script for Google Forms",
+    	"paneltitle": null,
+    	"navlist": {
+    		"overview": "Overview",
+    		"install": "Install",
+    		"quickstart": "Quick Start"
+    	}
+
+  	},
+  	"project": {
+  		"author": {
+    		"name": "Laura Taylor",
+    		"website": "https://github.com/techstreams"
+  		},
+    	"github": "https://github.com/techstreams/TSContactForm",
+    	"license": {
+    		"type": "Apache License, Version 2.0",
+    		"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    	}
+  	}
+  }
+}

@@ -3,6 +3,7 @@ gutil = require 'gulp-util'
 coffee = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
 rename = require 'gulp-rename'
+shell = require 'gulp-shell'
 
 source =
   coffee: 'src/tscontactform.coffee'
@@ -20,6 +21,10 @@ gulp.task 'build', ->
   .pipe(coffee({bare: true}).on('error', gutil.log))
   .pipe(rename("code.gs"))
   .pipe(gulp.dest(destination.gs))
+
+gulp.task 'docsdev', shell.task('harp server ./docs/_harp')
+
+gulp.task 'docsbuild', shell.task('harp compile ./docs/_harp ./docs/_site')
 
 gulp.task 'watch', ->
   gulp.watch source.coffee, ['lint', 'build']
