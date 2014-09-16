@@ -66,7 +66,7 @@ See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgx
 
 ## Change Log
 
-See the [Change Log](CHANGELOG.md)
+See the [Change Log](CHANGELOG.md).
 
 
 ## Contributing to this project
@@ -81,11 +81,9 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 ## Developer Notes
 
-### Code
+* Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [dist/code.gs](dist/code.gs) and use [Gulp](http://gulpjs.com/) to build.  *See the [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) section below for more information.*
 
-* Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [dist/code.gs](dist/code.gs) and use [Gulp](http://gulpjs.com/) to build.  See the [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) section below for more information.
-
-* Edit `.html` files directly in the [dist directory](./dist)
+* Edit `.html` files directly in the [dist directory](./dist).
 
 
 ### Using CoffeeScript and Gulp
