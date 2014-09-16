@@ -22,7 +22,6 @@
   FormApp.getUi()
       .createMenu('TSContactForm')
       .addItem('Enable Submit Trigger', 'enableSubmitTrigger')
-      .addItem('Clear All Form Responses', 'clearResponses')
       .addSeparator()
       .addItem('About', 'about')
       .addToUi();
@@ -42,15 +41,6 @@
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSContactForm: Error processing form submission', error.message);
   }
-}`
-
-###
- * Clear all form responses
-###
-`function clearResponses() {
-  var tscf;
-  tscf = new TSContactForm(FormApp.getActiveForm()).clearFormResponses();
-  FormApp.getUi().alert('All Form Responses Deleted.');
 }`
 
 ###
@@ -140,13 +130,6 @@ do ->
     # PUBLIC FUNCTIONS
 
     ###
-    * Delete all form responses
-    ###
-    clearFormResponses: ->
-      @deleteFormResponses_()
-      @
-
-    ###
     * Generate form meta and send email
     ###
     sendEmail: ->
@@ -174,13 +157,6 @@ do ->
       @
 
     # PRIVATE FUNCTIONS
-
-    ###
-    * Delete all form responses
-    ###
-    deleteFormResponses_: ->
-      @form.deleteAllResponses()
-      @
 
     ###
     * Generate form response meta

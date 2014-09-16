@@ -23,7 +23,6 @@ function onOpen() {
   FormApp.getUi()
       .createMenu('TSContactForm')
       .addItem('Enable Submit Trigger', 'enableSubmitTrigger')
-      .addItem('Clear All Form Responses', 'clearResponses')
       .addSeparator()
       .addItem('About', 'about')
       .addToUi();
@@ -42,15 +41,6 @@ function checkResponses(e) {
     // Send errors to owner
     MailApp.sendEmail(Session.getEffectiveUser().getEmail(), 'TSContactForm: Error processing form submission', error.message);
   }
-};
-
-/*
- * Clear all form responses
- */
-function clearResponses() {
-  var tscf;
-  tscf = new TSContactForm(FormApp.getActiveForm()).clearFormResponses();
-  FormApp.getUi().alert('All Form Responses Deleted.');
 };
 
 /*
@@ -142,16 +132,6 @@ function getPrettyDuration(time) {
 
 
     /*
-    * Delete all form responses
-     */
-
-    TSContactForm.prototype.clearFormResponses = function() {
-      this.deleteFormResponses_();
-      return this;
-    };
-
-
-    /*
     * Generate form meta and send email
      */
 
@@ -176,16 +156,6 @@ function getPrettyDuration(time) {
         return ScriptApp.deleteTrigger(trigger);
       });
       ScriptApp.newTrigger(functionName).forForm(this.form).onFormSubmit().create();
-      return this;
-    };
-
-
-    /*
-    * Delete all form responses
-     */
-
-    TSContactForm.prototype.deleteFormResponses_ = function() {
-      this.form.deleteAllResponses();
       return this;
     };
 
