@@ -12,7 +12,7 @@ For example, the following image shows a simple form ***created with <a href="ht
 
 <br>
 
-... and a view of an email from a form submission ***with TSContactForm installed***
+... and a view of an email form submission ***generated and sent by TSContactForm***
 
 <div class="separator">
 	<img src="img/email.png" class="img-responsive" alt="auth image">
@@ -49,7 +49,7 @@ There are ***two methods*** available for installing **TSContactForm**.
 
 <hr>
 
-Follow these instructions to install the ***TSContactForm script and host form*** into your Google Drive.  
+Follow these instructions to install the ***TSContactForm script and host form*** into your Google Drive ***with TSScriptCopy***:  
 
 <br>
 
@@ -58,7 +58,7 @@ Follow these instructions to install the ***TSContactForm script and host form**
 
 <br>
 
-**Step 2:**  Access the **<a href="https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec" target="_blank">TSScriptCopy application</a>**     
+**Step 2:**  Click **<a href="https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec" target="_blank">TSScriptCopy</a>** to access. ***Wait for the application to load...***    
 
 <br>
 
@@ -74,7 +74,7 @@ Follow these instructions to install the ***TSContactForm script and host form**
 
 <br>
 
-**Step 3:**  On the resulting web page, click the **Copy to Drive** button for **TSContactForm** to install  
+**Step 3:**  When the ***TSScriptCopy*** page displays in your browser, locate the **_TSContactForm_ Copy to Drive** button and ***click*** to install 
 
 <div class="separator">
    <img src="img/copy.png" class="img-responsive" alt="auth image">
@@ -82,7 +82,7 @@ Follow these instructions to install the ***TSContactForm script and host form**
 
 <br>
 
-**Step 4:** Wait for the **TSScriptCopy application** to copy the **TSContactForm script and host form** to your Google Drive.  *The copy process may take a minute to run...* 
+**Step 4:** Wait for **TSScriptCopy** to copy the ***TSContactForm script and host form*** to your Google Drive.  *The copy process may take a minute to run...* 
  
 <div class="separator">
 	<img src="img/wait.png" class="img-responsive" alt="auth image">
@@ -90,11 +90,13 @@ Follow these instructions to install the ***TSContactForm script and host form**
 
 <br>
 
-**Step 5:** Access and open the form by clicking the link in the resulting notification message. 
+**Step 5:** Access and open ***the TSContactForm host form*** by clicking the link in the resulting notification message.  
 
 <div class="separator">
 	<img src="img/notification.png" class="img-responsive" alt="auth image">
 </div>
+
+*(Click the __Close__ link to close the notification...or exist __TSScriptCopy__ by closing the associated browser window.)*
 
 <br>
 
@@ -124,16 +126,23 @@ See the **<a href="https://github.com/techstreams/TSContactForm" target="_blank"
 <div class="ts-notice ts-notice-info">
 <h4>Step 1: Enable TSContactForm</h4>
 
-Open a ***Google Form*** from your **<a href="http://drive.google.com/" target="_blank">Google Drive</a>** which has the **TSContactForm script** installed.   
-*(If you have not installed __TSContactForm__, see the **[Install](#install)** instructions above).*  
+Locate *(and open)* the ***Google Form*** created during **[Install](#install)**.    
 
 <br>
 
-Once the form is open, locate the **TSContactForm** menu option.
+Find the **TSContactForm** menu option in the form toolbar.
 
 <div class="separator">
 	<img src="img/menu.png" class="img-responsive" alt="auth image">
 </div>
+
+<br>
+
+Select the ***TSContactForm*** > ***Enable Submit Trigger*** menu option. 
+
+<div class="separator">
+	<img src="img/enable.png" class="img-responsive" alt="auth image">
+</div>  
 
 *(If you have not run __TSContactForm__ before, you will be prompted to perform a __one-time authorization__ to allow the script access.  Follow the prompts to authorize.)*
 
@@ -144,14 +153,6 @@ Once the form is open, locate the **TSContactForm** menu option.
 <div class="separator">
 	<img src="img/tsauth2.png" class="img-responsive" alt="auth image">
 </div>
-
-<br>
-
-Select the ***TSContactForm*** > ***Enable Submit Trigger*** menu option. 
-
-<div class="separator">
-	<img src="img/enable.png" class="img-responsive" alt="auth image">
-</div>  
 
 <br>
 
@@ -166,8 +167,11 @@ Select the ***TSContactForm*** > ***Enable Submit Trigger*** menu option.
 <div class="ts-notice ts-notice-info">
 <h4>Step 2: Modify Form</h4> 
 
-Create or modify the ***Google Form*** in normal fashion using the **Add item** button.  
-*See the __<a href="https://support.google.com/docs/topic/6063584" target="_blank">documentation</a>__ for more help creating or modifying Google Forms.* 
+Modify the ***Google Form*** in normal fashion using the **Add item** button.  *You can also change the form title, help text, etc.*  
+
+<br>
+
+*See the __<a href="https://support.google.com/docs/answer/2839737" target="_blank">documentation</a>__ for more help creating or modifying Google Forms.* 
 
 <div class="separator">
 	<img src="img/add.png" class="img-responsive" alt="auth image">
@@ -178,7 +182,11 @@ Create or modify the ***Google Form*** in normal fashion using the **Add item** 
 <div class="ts-notice ts-notice-info">
 <h4>Step 3: Publish Form</h4> 
 
-Get a link to the ***live form*** by clicking the **View live form** button on the form toolbar.  
+View the ***live form*** by clicking the **View live form** button on the form toolbar.  
+
+<br>
+
+*__The form is now ready to share with others__...see the __<a href="https://support.google.com/docs/answer/2839588" target="_blank">form sharing documentation</a>__ for more information.*
 <div class="separator">
 	<img src="img/liveform.png" class="img-responsive" alt="auth image">
 </div>
