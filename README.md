@@ -90,11 +90,10 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
 
-To install dependencies, run the following command from the project's root directory:
+To install dependencies, run the following command from the project's root directory *(You may need to run `sudo npm install` depending upon your environment)*:
 
     npm install
 
-*You may need to run `sudo npm install` depending upon your environment.*
 
 To build code, edit the [source](src/tscontactform.coffee) and run the following command from the project's root directory:
 
@@ -108,13 +107,13 @@ To run the docs locally, [install Harp](#docs) and run the following command fro
 
     gulp docsdev
 
-*Open up a browser and navigate to http://localhost:9000*
+*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
 
 To compile the docs, [install Harp](#docs) and run the following command from the project's root directory:
 
     gulp docsbuild
 
-You can find all gulp tasks in [gulpfile](gulpfile.coffee).
+You can find all gulp tasks in the [gulpfile](gulpfile.coffee).
 
 
 ### Docs
@@ -123,18 +122,15 @@ The documentation was built with [Harp](http://harpjs.com/).  To run the documen
 
 Install Harp on your system.  *See the [documentation](http://harpjs.com/docs/environment/install) for more information.*
 
-To run the Harp server, execute the following command from the project's root directory *(or use the [gulp docsdev](#using-coffeeScript-and-gulp) task)*:
+To run the Harp server, execute the following command from the project's root directory *(or use the [gulp docsdev](#using-coffeescript-and-gulp) task)*:
 
     harp server ./docs/_harp
 
-*Open up a browser and navigate to http://localhost:9000*
+*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)
 
-To build the docs, execute the following command from the project's root directory *(or use the [gulp docsbuild](#using-coffeeScript-and-gulp) task)*:
+To build the docs, execute the following command from the project's root directory *(or use the [gulp docsbuild](#using-coffeescript-and-gulp) task)*:
 
     harp compile ./docs/_harp ./docs/_site
-
-
-
 
 
 
