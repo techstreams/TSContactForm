@@ -19,7 +19,7 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 * Locate and open the **TSContact host form** which was copied to your Google Drive
 
-* To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub).
+* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm).
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
@@ -48,25 +48,20 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 * Close the script editor and reload the form in your browser
 
-* To use the script, see the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub)
+* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)
 
 
 
 
 ## Usage
 
-See the [TSContactForm documentation](https://docs.google.com/document/d/1gTBYgxVAjbRP2VoGg3pbZBhoLNKen10hYnuTP8PK8Dk/pub)
+See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)
 
 **Important Usage Notes**
 
 * Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/macros/dashboard) for more information.
 
 * TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
-
-
-## Change Log
-
-See the [Change Log](CHANGELOG.md).
 
 
 ## Contributing to this project
@@ -77,6 +72,10 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 * [Feature requests](CONTRIBUTING.md#feature-requests)
 * [Pull requests](CONTRIBUTING.md#pull-requests)
 
+
+## Change Log
+
+See the [Change Log](CHANGELOG.md)
 
 
 ## Developer Notes
@@ -90,7 +89,7 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
 
-To install dependencies, run the following command from the project's root directory *(You may need to run `sudo npm install` depending upon your environment)*:
+To install dependencies, run the following command from the project's root directory *(you may need to run `sudo npm install` depending upon your environment)*:
 
     npm install
 
@@ -126,7 +125,7 @@ To run the Harp server, execute the following command from the project's root di
 
     harp server ./docs/_harp
 
-*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)
+*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
 
 To build the docs, execute the following command from the project's root directory *(or use the [gulp docsbuild](#using-coffeescript-and-gulp) task)*:
 
