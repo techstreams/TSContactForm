@@ -41,7 +41,7 @@
 <? } ?>
 <hr>
 <br>
-<? meta.response.forEach(function(item){ ?>
+<? meta.response.forEach(function(item, index){ ?>
    <? if (item.response) { ?>
       <? var dateArray, duration; ?>
       <p><strong><?= item.title ?>:</strong></p>
@@ -77,9 +77,16 @@
       <? } else { ?>
       <p><?= item.response ?></p>
       <? } ?>
+      <? if (index < (meta.response.length - 1)) { ?>
       <p>-----------------------------</p>
       <? } ?>
+      <? } ?>
 <? }) ?>
+<br>
+<br>
+<hr>
+<p style="font-size:90%;"><em>Email generated with <a href="http://techstreams.github.io/TSContactForm">TSContactForm</a></em></p>
+
 </div>
 </td>
 </tr>
