@@ -137,10 +137,7 @@ do ->
     * @return {TSContactForm} this object for chaining
     ###
     sendEmail: ->
-      # Generate an object with form submission data
       @generateFormResponseMeta_()
-
-      # Send email
       if @meta
         @sendEmail_()
       @
