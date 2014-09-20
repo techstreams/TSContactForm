@@ -168,6 +168,7 @@ function getPrettyDuration(time) {
     /*
     * Generate form response meta
     * @return {TSContactForm} this object for chaining
+    * @private
      */
 
     TSContactForm.prototype.generateFormResponseMeta_ = function() {
@@ -214,6 +215,7 @@ function getPrettyDuration(time) {
     * Get form response item type
     * @param {object} form response item type
     * @return {string} type of form object
+    * @private
      */
 
     TSContactForm.prototype.getItemType_ = function(itemType) {
@@ -264,6 +266,7 @@ function getPrettyDuration(time) {
     /*
     * Send email
     * @return {TSContactForm} this object for chaining
+    * @private
      */
 
     TSContactForm.prototype.sendEmail_ = function() {

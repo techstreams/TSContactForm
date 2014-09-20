@@ -166,6 +166,7 @@ do ->
     ###
     * Generate form response meta
     * @return {TSContactForm} this object for chaining
+    * @private
     ###
     generateFormResponseMeta_: ->
       if @formResponse
@@ -200,6 +201,7 @@ do ->
     * Get form response item type
     * @param {object} form response item type
     * @return {string} type of form object
+    * @private
     ###
     getItemType_: (itemType) ->
       type = null
@@ -234,6 +236,7 @@ do ->
     ###
     * Send email
     * @return {TSContactForm} this object for chaining
+    * @private
     ###
     sendEmail_: () ->
       email = HtmlService.createTemplateFromFile(@email)
