@@ -88,7 +88,7 @@ Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [di
 Edit `.html` files directly in the [dist/ directory](./dist).
 
 
-### Using CoffeeScript and Gulp
+#### Using CoffeeScript and Gulp
 
 Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) are installed on your system.  *NOTE: Most Node.js installers include npm.*
 
