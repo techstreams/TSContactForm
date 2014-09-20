@@ -63,6 +63,7 @@
 ###
  * Get time in pretty format
  * @param {string} time string in format hh:mm
+ * @return {string} time string in pretty format
 ###
 `function getPrettyTime(time) {
   var t;
@@ -82,6 +83,7 @@
 ###
  * Get duration in pretty format
  * @param {string} duration string in format hh:mm:ss
+ * @return {string} duration string in pretty format
 ###
 `function getPrettyDuration(time) {
   var duration, t;
@@ -122,6 +124,7 @@ do ->
     * @param {object} form response object
     * @param {string} email template name
     * @param {string} email subject line
+    * @return {TSContactForm} this object for chaining
     ###
     constructor: (@form, @formResponse = null, @email = 'email', @subjectline = 'Form Submission') ->
       @meta = null
@@ -131,6 +134,7 @@ do ->
 
     ###
     * Generate form meta and send email
+    * @return {TSContactForm} this object for chaining
     ###
     sendEmail: ->
       # Generate an object with form submission data
@@ -144,6 +148,7 @@ do ->
     ###
     * Set a form trigger for processing form responses
     * @param {string} function name to be run on trigger
+    * @return {TSContactForm} this object for chaining
     ###
     setFormTrigger: (functionName) ->
       # Set form submit trigger - call when generating form
@@ -160,6 +165,7 @@ do ->
 
     ###
     * Generate form response meta
+    * @return {TSContactForm} this object for chaining
     ###
     generateFormResponseMeta_: ->
       if @formResponse
@@ -193,6 +199,7 @@ do ->
     ###
     * Get form response item type
     * @param {object} form response item type
+    * @return {string} type of form object
     ###
     getItemType_: (itemType) ->
       type = null
@@ -226,15 +233,15 @@ do ->
 
     ###
     * Send email
+    * @return {TSContactForm} this object for chaining
     ###
     sendEmail_: () ->
       email = HtmlService.createTemplateFromFile(@email)
       email.meta = @meta
       params =
         htmlBody: email.evaluate().getContent()
-      # Send email
       MailApp.sendEmail(Session.getEffectiveUser().getEmail(), @subjectline, "", params)
-      null
+      @
 
 
 

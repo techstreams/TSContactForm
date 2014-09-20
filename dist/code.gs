@@ -62,6 +62,7 @@ function about() {
 /*
  * Get time in pretty format
  * @param {string} time string in format hh:mm
+ * @return {string} time string in pretty format
  */
 function getPrettyTime(time) {
   var t;
@@ -80,6 +81,7 @@ function getPrettyTime(time) {
 /*
  * Get duration in pretty format
  * @param {string} duration string in format hh:mm:ss
+ * @return {string} duration string in pretty format
  */
 function getPrettyDuration(time) {
   var duration, t;
@@ -120,6 +122,7 @@ function getPrettyDuration(time) {
     * @param {object} form response object
     * @param {string} email template name
     * @param {string} email subject line
+    * @return {TSContactForm} this object for chaining
      */
     function TSContactForm(form, formResponse, email, subjectline) {
       this.form = form;
@@ -133,6 +136,7 @@ function getPrettyDuration(time) {
 
     /*
     * Generate form meta and send email
+    * @return {TSContactForm} this object for chaining
      */
 
     TSContactForm.prototype.sendEmail = function() {
@@ -147,6 +151,7 @@ function getPrettyDuration(time) {
     /*
     * Set a form trigger for processing form responses
     * @param {string} function name to be run on trigger
+    * @return {TSContactForm} this object for chaining
      */
 
     TSContactForm.prototype.setFormTrigger = function(functionName) {
@@ -162,6 +167,7 @@ function getPrettyDuration(time) {
 
     /*
     * Generate form response meta
+    * @return {TSContactForm} this object for chaining
      */
 
     TSContactForm.prototype.generateFormResponseMeta_ = function() {
@@ -207,6 +213,7 @@ function getPrettyDuration(time) {
     /*
     * Get form response item type
     * @param {object} form response item type
+    * @return {string} type of form object
      */
 
     TSContactForm.prototype.getItemType_ = function(itemType) {
@@ -256,6 +263,7 @@ function getPrettyDuration(time) {
 
     /*
     * Send email
+    * @return {TSContactForm} this object for chaining
      */
 
     TSContactForm.prototype.sendEmail_ = function() {
@@ -266,7 +274,7 @@ function getPrettyDuration(time) {
         htmlBody: email.evaluate().getContent()
       };
       MailApp.sendEmail(Session.getEffectiveUser().getEmail(), this.subjectline, "", params);
-      return null;
+      return this;
     };
 
     return TSContactForm;
