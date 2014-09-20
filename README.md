@@ -1,25 +1,29 @@
 #  TSContactForm
 
-**TSContactForm** is a [Google Apps Script](https://www.google.com/script/start/) for [Google Forms](https://support.google.com/docs/topic/6063584) which automatically emails the form owner each time a user submits a response to the form.  Emails are nicely formatted and contain the contents of the form submission.
+[Google Apps Script](https://www.google.com/script/start/) for [Google Forms](https://support.google.com/docs/topic/6063584) which automatically emails the form owner each time a user submits a response to the form.  Emails are nicely formatted and contain the contents of the form submission.
 
 
 
 ## Install
 
+There are **two** methods available for installing TSContactForm.
 
-### Method #1:  TSScriptCopy Application Install
+---
 
-Use the **TSScriptCopy application** to install the **TSContactForm script and host form** into your Google Drive.  
+#### Method #1:  TSScriptCopy Application Install
+
+Use the [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec) to install the ***TSContactForm script and host form*** into your Google Drive.  
 
 * Login to your [Google Drive](http://drive.google.com)
 
-* Click [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec) and wait for the application to load. *(If you have not run TSScriptCopy before, you will be prompted to perform a __one-time authorization__ to allow the application to copy scripts and host documents to your Google Drive.)*
+* Click [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec) and wait for the application to load. *(If you have not run TSScriptCopy before, you will be prompted to perform a 
+__one-time authorization__ to allow the application to copy scripts and host documents to your Google Drive.)*
 
-* When the **TSScriptCopy** page displays in your browser, locate the **TSContactForm Copy to Drive** button and click to install
+* When the TSScriptCopy page displays in your browser, locate the TSContactForm `Copy to Drive` button and click to install
 
-* Wait for **TSScriptCopy** to copy the ***TSContactForm script and host form*** to your Google Drive. *The copy process may take a minute to run...*
+* Wait for the TSScriptCopy application to copy the TSContactForm script and host form to your Google Drive. *The copy process may take a minute to run...*
 
-* Access and open the ***TSContactForm host form*** by clicking the link in the resulting **TSScriptCopy** notification message.  *(Click the __Close__ link to close the notification...or exist __TSScriptCopy__ by closing the associated browser window.)*
+* Access and open the TSContactForm host form by clicking the link in the resulting notification message.  *(Click the `Close` link to close the notification...or exit the TSScriptCopy application by closing the associated browser window.)*
 
 * To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm).
 
@@ -27,8 +31,10 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
 
 
+---
 
-### Method #2:  Manual Install
+
+#### Method #2:  Manual Install
 
 * Login to your [Google Drive](http://drive.google.com)
 
@@ -36,7 +42,7 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 * Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet)
 
-* Add the following files from the **dist** directory to the form project:
+* Add the following files from the **[dist/](./dist)** directory to the form project:
 
   * [code.gs](dist/code.gs)
   * [email.html](dist/email.html)
@@ -44,9 +50,9 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
   NOTES:
 
-  There should already be a file named **Code.gs** in your form project when you first create it.  Replace the contents of that file with the contents of the [code.gs](dist/code.gs) file and save.
+  There should already be a file named `Code.gs` in your form project when you first create it.  Replace the contents of that file with the contents of the [dist/code.gs](dist/code.gs) file and save.
 
-  When creating form project files for [email.html](dist/email.html) and [about.html](dist/about.html), be sure to select the ***File > New > Html*** menu option from the script editor.  Enter the associated file name ( `email` or `about` ) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the respective html file content ( [email.html](dist/email.html) or [about.html](dist/about.html) ) and save.
+  When creating form project files for [email.html](dist/email.html) and [about.html](dist/about.html), be sure to select the ***File > New > Html*** menu option from the script editor.  Enter the associated file name ( `email` or `about` ) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the respective html file content *( [dist/email.html](dist/email.html) or [dist/about.html](dist/about.html) )* and save.
 
 * Close the script editor and reload the form in your browser
 
@@ -59,7 +65,7 @@ Use the **TSScriptCopy application** to install the **TSContactForm script and h
 
 See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)
 
-**Important Usage Notes**
+**Important Usage Notes:**
 
 * Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/macros/dashboard) for more information.
 
@@ -68,23 +74,18 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 ## Contributing to this project
 
-Contributions are welcome. Please take a moment to review the [guidelines for contributing](CONTRIBUTING.md).
+Contributions are welcome. Please take a moment to review the [guidelines for contributing](CONTRIBUTING.md) and check the [Change log](CHANGELOG.md) for any existing updates.
 
 * [Bug reports](CONTRIBUTING.md#bug-reports)
 * [Feature requests](CONTRIBUTING.md#feature-requests)
 * [Pull requests](CONTRIBUTING.md#pull-requests)
 
 
-## Change Log
-
-See the [Change Log](CHANGELOG.md)
-
-
 ## Developer Notes
 
-* Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [dist/code.gs](dist/code.gs) and use [Gulp](http://gulpjs.com/) to build.  *See the [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) section below for more information.*
+Edit [src/tscontactform.coffee](src/tscontactform.coffee) for all changes to [dist/code.gs](dist/code.gs) and use [Gulp](http://gulpjs.com/) to build.  *See the [Using CoffeeScript and Gulp](#using-coffeescript-and-gulp) section below for more information.*
 
-* Edit `.html` files directly in the [dist directory](./dist).
+Edit `.html` files directly in the [dist/ directory](./dist).
 
 
 ### Using CoffeeScript and Gulp
@@ -95,6 +96,8 @@ To install dependencies, run the following command from the project's root direc
 
     npm install
 
+**Code:**
+
 
 To build code, edit the [source](src/tscontactform.coffee) and run the following command from the project's root directory:
 
@@ -104,35 +107,29 @@ To build code, edit the [source](src/tscontactform.coffee) and run the following
 
     gulp dev
 
-To run the docs locally, [install Harp](#docs) and run the following command from the project's root directory:
+**Docs:**
+
+Ensure that [Harp](http://harpjs.com/docs/quick-start) is installed on your system.
+
+To view the docs locally, and run one of the following commands from the project's root directory:
 
     gulp docsdev
 
-*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
-
-To compile the docs, [install Harp](#docs) and run the following command from the project's root directory:
-
-    gulp docsbuild
-
-You can find all gulp tasks in the [gulpfile](gulpfile.coffee).
-
-
-### Docs
-
-The documentation was built with [Harp](http://harpjs.com/).  To run the documentation locally:
-
-Install Harp on your system.  *See the [documentation](http://harpjs.com/docs/environment/install) for more information.*
-
-To run the Harp server, execute the following command from the project's root directory *(or use the [gulp docsdev](#using-coffeescript-and-gulp) task)*:
+OR
 
     harp server ./docs/_harp
 
 *Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
 
-To build the docs, execute the following command from the project's root directory *(or use the [gulp docsbuild](#using-coffeescript-and-gulp) task)*:
+To compile the docs, run one of the following commands from the project's root directory:
+
+    gulp docsbuild
+
+OR
 
     harp compile ./docs/_harp ./docs/_site
 
+You can find all gulp tasks in the [gulpfile](gulpfile.coffee).
 
 
 ## License
