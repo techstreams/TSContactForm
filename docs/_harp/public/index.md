@@ -167,11 +167,17 @@ Select the ***TSContactForm*** > ***Enable Submit Trigger*** menu option.
 <div class="ts-notice ts-notice-info">
 <h4>Step 2: Modify Form</h4> 
 
-Modify the ***Google Form*** in normal fashion using the **Add item** button.  *You can also change the form title, help text, etc.*  
+Modify the ***Google Form***...*see the __<a href="https://support.google.com/docs/answer/2839737" target="_blank">documentation</a>__ for more help.*  
+
+<ul>
+	<li>Add form items using the **Add item** button</li>
+	<li>Edit the ***form title, form description, ...***</li>
+	<li>Add or customize the __<a href="https://support.google.com/docs/answer/145737" target="_blank">form theme</a>__</li>
+</ul> 
 
 <br>
 
-*See the __<a href="https://support.google.com/docs/answer/2839737" target="_blank">documentation</a>__ for more help creating or modifying Google Forms.* 
+
 
 <div class="separator">
 	<img src="img/add.png" class="img-responsive" alt="auth image">
