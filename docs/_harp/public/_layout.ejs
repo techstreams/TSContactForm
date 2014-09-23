@@ -55,13 +55,15 @@
         </div><!-- /.col-sm-9 -->
       </div>
     </div>
+    <% var d = new Date();  %>
     <div id="footer" class="footer">
       <div class="container">
         <p>
-          &copy; 2014 <a href="<%- project.author.website %>" target="_blank"><%- project.author.name %></a>
+          &copy; <%= d.getFullYear()  %> <a href="<%- project.author.website %>" target="_blank"><%- project.author.name %></a>
           &nbsp;&nbsp;|&nbsp;&nbsp; 
           <%- site.title %> licensed under <a href="<%- project.license.url %>" target="_blank"><%- project.license.type %></a>
         </p> 
+        <p><em><strong>Last Updated:</strong> <%= d.toDateString() %></em></p>
       </div>
     </div>
 
