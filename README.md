@@ -94,18 +94,30 @@ Ensure that [Node.js](http://nodejs.org/) and [npm](https://github.com/npm/npm) 
 
 To install dependencies, run the following command from the project's root directory *(you may need to run `sudo npm install` depending upon your environment)*:
 
-    npm install
+```sh
+$ npm install
+```
+
+Install [Gulp](http://gulpjs.com/) globally. *(You may need to run `sudo npm install --global gulp` depending upon your environment)*:
+
+```sh
+$ npm install --global gulp
+```
 
 **Code:**
 
 
 To build code, edit the [source](src/tscontactform.coffee) and run the following command from the project's root directory:
 
-    gulp
+```sh
+$ gulp
+```
 
 *While developing, the `gulp dev` task may be useful.  Run the following command from the project's root directory:*
 
-    gulp dev
+```sh
+$ gulp dev
+```
 
 **Docs:**
 
@@ -113,21 +125,29 @@ Ensure that [Harp](http://harpjs.com/docs/quick-start) is installed on your syst
 
 To view the docs locally, and run one of the following commands from the project's root directory:
 
-    gulp docsdev
+```sh
+$ gulp docsdev
+```
 
 OR
 
-    harp server ./docs/_harp
+```sh    
+$ harp server ./docs/_harp
+```
 
 *Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
 
 To compile the docs, run one of the following commands from the project's root directory:
 
-    gulp docsbuild
+```sh
+$ gulp docsbuild
+```
 
 OR
 
-    harp compile ./docs/_harp ./docs/_site
+```sh
+$ harp compile ./docs/_harp ./docs/_site
+```
 
 You can find all gulp tasks in the [gulpfile](gulpfile.coffee).
 
