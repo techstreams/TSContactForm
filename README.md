@@ -12,20 +12,7 @@ There are **two** methods available for installing TSContactForm.
 
 #### Method #1:  TSScriptCopy Application Install
 
-Use the [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec) to install the ***TSContactForm script and host form*** into your Google Drive.  
-
-* Login to your [Google Drive](http://drive.google.com)
-
-* Click [TSScriptCopy application](https://script.google.com/macros/s/AKfycbyvyOdWanBy-3ovr_YirIK9gNR-EYkpdYtbROPi7qgrpABO7H09/exec) and wait for the application to load. *(If you have not run TSScriptCopy before, you will be prompted to perform a 
-__one-time authorization__ to allow the application to copy scripts and host documents to your Google Drive.)*
-
-* When the TSScriptCopy page displays in your browser, locate the TSContactForm `Copy to Drive` button and click to install
-
-* Wait for the TSScriptCopy application to copy the TSContactForm script and host form to your Google Drive. *The copy process may take a minute to run...*
-
-* Access and open the TSContactForm host form by clicking the link in the resulting notification message.  *(Click the `Close` link to close the notification...or exit the TSScriptCopy application by closing the associated browser window.)*
-
-* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm).
+See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm) for TSScriptCopy installation instructions.
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
