@@ -1,6 +1,6 @@
 {
   "name": "TSContactForm",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A Google Apps Script for Google Forms which sends an email response to the form owner upon each form submission.",
   "author": "Laura Taylor",
   "license": "Apache License, Version 2.0",
