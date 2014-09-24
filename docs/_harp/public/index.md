@@ -96,7 +96,7 @@ Follow these instructions to install the ***TSContactForm script and host form**
 	<img src="img/notification.png" class="img-responsive" alt="auth image">
 </div>
 
-*(Click the __Close__ link to close the notification...or exist __TSScriptCopy__ by closing the associated browser window.)*
+*(Click the __Close__ link to close the notification...or exit __TSScriptCopy__ by closing the associated browser window.)*
 
 <br>
 
