@@ -1,14 +1,16 @@
 #  TSContactForm
 
-> [Google Apps Script](https://www.google.com/script/start/) for [Google Forms](https://support.google.com/docs/topic/6063584) which automatically emails the form owner each time a user submits a response to the form.  Emails are nicely formatted and contain the contents of the form submission.
+> [Google Apps Script](https://www.google.com/script/start/) for [Google Forms](https://support.google.com/docs/topic/6063584) which automatically emails the form owner each time a user submits a response to the form.  Emails are nicely formatted and contain the contents of the form submission.  
+
+
+---
 
 
 
 ## Install
 
-There are **two** methods available for installing TSContactForm.
+> There are **two** methods available for installing TSContactForm.
 
----
 
 #### Method #1:  TSScriptCopy Application Install
 
@@ -16,9 +18,6 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
-
-
----
 
 
 #### Method #2:  Manual Install
@@ -43,9 +42,9 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 * Close the script editor and reload the form in your browser
 
-* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)
+* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)  
 
-
+---
 
 
 ## Usage
@@ -65,7 +64,9 @@ Contributions are welcome. Please take a moment to review the [guidelines for co
 
 * [Bug reports](CONTRIBUTING.md#bug-reports)
 * [Feature requests](CONTRIBUTING.md#feature-requests)
-* [Pull requests](CONTRIBUTING.md#pull-requests)
+* [Pull requests](CONTRIBUTING.md#pull-requests)  
+
+---
 
 
 ## Developer Notes
@@ -136,7 +137,9 @@ OR
 $ harp compile ./docs/_harp ./docs/_site
 ```
 
-You can find all gulp tasks in the [gulpfile](gulpfile.coffee).
+You can find all gulp tasks in the [gulpfile](gulpfile.coffee).  
+
+---
 
 
 ## License
