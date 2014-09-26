@@ -3,9 +3,6 @@
 > [Google Apps Script](https://www.google.com/script/start/) for [Google Forms](https://support.google.com/docs/topic/6063584) which automatically emails the form owner each time a user submits a response to the form.  Emails are nicely formatted and contain the contents of the form submission.  
 
 
----
-
-
 
 ## Install
 
@@ -55,7 +52,10 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 * Google Apps Scripts are subject to daily quota limits including the number of emails sent.   See the *Quota Limits* tab of the [Google Apps Script Dashboard](https://docs.google.com/macros/dashboard) for more information.
 
-* TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.
+* TSContactForm may not be appropriate for high traffic forms, especially in cases where the form owner consistently receives quota limit exceeded notifications.  
+
+
+---
 
 
 ## Contributing to this project
