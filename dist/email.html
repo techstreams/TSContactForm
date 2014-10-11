@@ -44,7 +44,8 @@
 <? meta.response.forEach(function(item, index){ ?>
    <? if (item.response) { ?>
       <? var dateArray, duration; ?>
-      <p><strong><?= item.title ?>:</strong></p>
+      <h3><?= item.title ?>:</h3>
+      <div style="padding: 2px 15px; color: #00000; font-size: 90%; background-color: #FFFACD; border-radius: 8px;">
       <? if (item.type == 'checkbox') {?>
       <? item.response.forEach(function(option) { ?>
       <p>- <?= option ?></p>
@@ -77,16 +78,13 @@
       <? } else { ?>
       <p><?= item.response ?></p>
       <? } ?>
-      <? if (index < (meta.response.length - 1)) { ?>
-      <p>-----------------------------</p>
-      <? } ?>
+      </div>
+      <br>
+      <hr>
+      <br>
       <? } ?>
 <? }) ?>
-<br>
-<br>
-<hr>
 <p style="font-size:90%;"><em>Email generated with <a href="http://techstreams.github.io/TSContactForm">TSContactForm</a></em></p>
-
 </div>
 </td>
 </tr>
