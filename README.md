@@ -11,7 +11,7 @@
 
 #### Method #1:  TSScriptCopy Application Install
 
-See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm) for TSScriptCopy installation instructions.
+See the [TSContactForm documentation](https://techstreams.github.io/TSContactForm) for TSScriptCopy installation instructions.
 
 
 *NOTE: The TSScriptCopy application is licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)*
@@ -19,7 +19,7 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 #### Method #2:  Manual Install
 
-* Login to your [Google Drive](http://drive.google.com)
+* Login to your [Google Drive](https://drive.google.com)
 
 * Create a [Google Form](https://support.google.com/docs/topic/6063584)
 
@@ -39,14 +39,14 @@ See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm
 
 * Close the script editor and reload the form in your browser
 
-* To use the script, see the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)  
+* To use the script, see the [TSContactForm documentation](https://techstreams.github.io/TSContactForm)  
 
 ---
 
 
 ## Usage
 
-See the [TSContactForm documentation](http://techstreams.github.io/TSContactForm)
+See the [TSContactForm documentation](https://techstreams.github.io/TSContactForm)
 
 **Important Usage Notes:**
 
