@@ -107,36 +107,6 @@ $ gulp
 $ gulp dev
 ```
 
-**Docs:**
-
-Ensure that [Harp](http://harpjs.com/docs/quick-start) is installed on your system.
-
-To view the docs locally, and run one of the following commands from the project's root directory:
-
-```sh
-$ gulp docsdev
-```
-
-OR
-
-```sh    
-$ harp server ./docs/_harp
-```
-
-*Open up a browser and navigate to [http://localhost:9000](http://localhost:9000)*
-
-To compile the docs, run one of the following commands from the project's root directory:
-
-```sh
-$ gulp docsbuild
-```
-
-OR
-
-```sh
-$ harp compile ./docs/_harp ./docs/_site
-```
-
 You can find all gulp tasks in the [gulpfile](gulpfile.coffee).  
 
 ---
