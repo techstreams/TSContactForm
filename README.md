@@ -6,37 +6,13 @@
 
 ## Install
 
-> There are **two** methods available for installing TSContactForm.
+Follow these instructions to install the **TSContactForm** script and host form into your Google Drive:
 
+* Login to your [Google Drive](http://drive.google.com/).
 
-#### Method #1:  Make a Copy of the Google Form
+* Access the [TSContactForm form](https://techstreams.page.link/TSContactForm).
 
-See the [TSContactForm documentation](https://techstreams.github.io/TSContactForm) for form copy instructions.
-
-
-#### Method #2:  Manual Install
-
-* Login to your [Google Drive](https://drive.google.com)
-
-* Create a [Google Form](https://support.google.com/docs/topic/6063584)
-
-* Create a form project following [these instructions](https://developers.google.com/apps-script/managing_projects#creatingSpreadsheet)
-
-* Add the following files from the **[dist/](./dist)** directory to the form project:
-
-  * [code.gs](dist/code.gs)
-  * [email.html](dist/email.html)
-  * [about.html](dist/about.html)
-
-  NOTES:
-
-  There should already be a file named `Code.gs` in your form project when you first create it.  Replace the contents of that file with the contents of the [dist/code.gs](dist/code.gs) file and save.
-
-  When creating form project files for [email.html](dist/email.html) and [about.html](dist/about.html), be sure to select the ***File > New > Html*** menu option from the script editor.  Enter the associated file name ( `email` or `about` ) but omit the `.html` suffix as it will automatically be added when the file is created.  Replace the created project file content with the respective html file content *( [dist/email.html](dist/email.html) or [dist/about.html](dist/about.html) )* and save.
-
-* Close the script editor and reload the form in your browser
-
-* To use the script, see the [TSContactForm documentation](https://techstreams.github.io/TSContactForm)  
+Step 3: Click the ***Use Template*** button. This will copy the form to your Google Drive. 
 
 ---
 
