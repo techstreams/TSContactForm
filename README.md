@@ -12,7 +12,7 @@ Follow these instructions to install the **TSContactForm** script and host form 
 
 * Access the [TSContactForm form](https://techstreams.page.link/TSContactForm).
 
-Step 3: Click the ***Use Template*** button. This will copy the form to your Google Drive. 
+* Click the ***Use Template*** button. This will copy the form to your Google Drive. 
 
 ---
 
